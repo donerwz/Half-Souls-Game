@@ -3,14 +3,14 @@
 [ext_resource type="PackedScene" uid="uid://b46oumas53bdv" path="res://game_scene.tscn" id="1_lvnnb"]
 [ext_resource type="PackedScene" uid="uid://cuev551nm4two" path="res://knight_character_scene.tscn" id="2_0culw"]
 [ext_resource type="Texture2D" uid="uid://ckv7eh83e1kl7" path="res://sprites/dungeonbackgroundpixelart.jpg" id="4_d2vyx"]
-[ext_resource type="AudioStream" uid="uid://crq6vx2iyjdkk" path="res://music/game-bgm.mp3" id="4_nm52x"]
+[ext_resource type="AudioStream" uid="uid://bn2sii4m71rvu" path="res://music/game-bgm-full.mp3" id="4_p1fvv"]
 [ext_resource type="PackedScene" uid="uid://dpy0hgjfhgvsv" path="res://soul_scene.tscn" id="5_nm52x"]
 [ext_resource type="PackedScene" uid="uid://ccic15lr7k5f0" path="res://killbrick_scene.tscn" id="6_p1fvv"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0ofvv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p1fvv"]
-size = Vector2(48, 12)
+size = Vector2(16, 10)
 
 [node name="Game" instance=ExtResource("1_lvnnb")]
 
@@ -1436,8 +1436,8 @@ scale = Vector2(0.5069444, 0.49444443)
 texture = ExtResource("4_d2vyx")
 
 [node name="BackgroundMusic1" type="AudioStreamPlayer" parent="." index="3"]
-stream = ExtResource("4_nm52x")
-volume_db = -7.0
+stream = ExtResource("4_p1fvv")
+volume_db = -2.0
 autoplay = true
 
 [node name="Soul" parent="." index="4" instance=ExtResource("5_nm52x")]
@@ -1456,4 +1456,8 @@ position = Vector2(75, -136)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick2" index="0"]
 position = Vector2(13, 4)
+shape = SubResource("RectangleShape2D_p1fvv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Killbrick2" index="1"]
+position = Vector2(189, -28)
 shape = SubResource("RectangleShape2D_p1fvv")
