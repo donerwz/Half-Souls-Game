@@ -1,7 +1,7 @@
 extends Area2D
 
-@export var new_speed: float = 225.0
-@export var new_jump_power: float = -300.0
+@export var new_speed: float = 175.0
+@export var new_jump_power: float = -350.0
 	
 
 

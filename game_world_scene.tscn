@@ -1,11 +1,12 @@
-[gd_scene load_steps=10 format=4 uid="uid://duwdy33ghtlvu"]
+[gd_scene load_steps=11 format=4 uid="uid://c6dtmugskad4o"]
 
 [ext_resource type="PackedScene" uid="uid://b46oumas53bdv" path="res://game_scene.tscn" id="1_lvnnb"]
 [ext_resource type="PackedScene" uid="uid://cuev551nm4two" path="res://knight_character_scene.tscn" id="2_0culw"]
 [ext_resource type="Texture2D" uid="uid://ckv7eh83e1kl7" path="res://sprites/dungeonbackgroundpixelart.jpg" id="4_d2vyx"]
 [ext_resource type="AudioStream" uid="uid://c8j3lmvw0nmuo" path="res://music/game-bgm-full.mp3" id="4_p1fvv"]
-[ext_resource type="PackedScene" path="res://soul_scene.tscn" id="5_nm52x"]
-[ext_resource type="PackedScene" path="res://killbrick_scene.tscn" id="6_p1fvv"]
+[ext_resource type="PackedScene" uid="uid://dpy0hgjfhgvsv" path="res://soul_scene.tscn" id="5_nm52x"]
+[ext_resource type="PackedScene" uid="uid://ccic15lr7k5f0" path="res://killbrick_scene.tscn" id="6_p1fvv"]
+[ext_resource type="PackedScene" uid="uid://cwd6pul2bpkcj" path="res://soulJump_scene.tscn" id="7_0ofvv"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0ofvv"]
 
@@ -1444,7 +1445,7 @@ volume_db = -2.0
 autoplay = true
 
 [node name="Soul" parent="." index="4" instance=ExtResource("5_nm52x")]
-position = Vector2(646, -107)
+position = Vector2(25, -11)
 
 [node name="Area2D" type="Area2D" parent="." index="5"]
 
@@ -2054,3 +2055,6 @@ shape = SubResource("RectangleShape2D_0ofvv")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Killbrick25" index="3"]
 position = Vector2(285, -1273)
 shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Soul2" parent="." index="82" instance=ExtResource("7_0ofvv")]
+position = Vector2(657, -107)
