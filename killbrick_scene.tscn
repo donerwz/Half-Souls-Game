@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccic15lr7k5f0"]
+
+[ext_resource type="Script" uid="uid://ccegenuj4y2x1" path="res://killbrick_script.gd" id="1_sh0t1"]
+[ext_resource type="AudioStream" uid="uid://c2jxpu551orcj" path="res://sounds/547184__mrfossy__voice_adultmale_deathscream_01.wav" id="2_ouy42"]
+
+[node name="Killbrick" type="Area2D"]
+collision_mask = 16
+script = ExtResource("1_sh0t1")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ouy42")
+volume_db = 3.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://dpy0hgjfhgvsv"]
+
+[ext_resource type="Texture2D" uid="uid://s55jpevgos5h" path="res://sprites/pixil-frame-0 (1).png" id="1_5c0ox"]
+[ext_resource type="Script" uid="uid://cv6q3wbdf5gny" path="res://soul_script.gd" id="1_cex2b"]
+[ext_resource type="Texture2D" uid="uid://ealgt5giqk0d" path="res://sprites/pixil-frame-0.png" id="2_42rgm"]
+[ext_resource type="AudioStream" uid="uid://6a6so51gr5y" path="res://sounds/431980__horroraudio__ghost-sigh2.wav" id="4_uky6e"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cex2b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5c0ox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_42rgm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5c0ox"]
+radius = 5.0
+
+[node name="Soul" type="Area2D"]
+collision_mask = 16
+script = ExtResource("1_cex2b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.3841858e-07, -2.3841858e-07)
+scale = Vector2(1.375, 1.375)
+sprite_frames = SubResource("SpriteFrames_cex2b")
+frame = 1
+frame_progress = 0.15781207
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_5c0ox")
+
+[node name="SoulSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_uky6e")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
