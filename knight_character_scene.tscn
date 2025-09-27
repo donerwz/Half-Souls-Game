@@ -1,9 +1,7 @@
-[gd_scene load_steps=42 format=3 uid="uid://cuev551nm4two"]
+[gd_scene load_steps=40 format=3 uid="uid://cuev551nm4two"]
 
 [ext_resource type="Script" uid="uid://ces1c6bbmnmng" path="res://knight_character_movement_script.gd" id="1_58q3j"]
 [ext_resource type="Texture2D" uid="uid://fef58xsbxsc8" path="res://sprites/knight.png" id="1_exn81"]
-[ext_resource type="Texture2D" uid="uid://bei4j4jnnhtut" path="res://assets/arrow.png" id="3_vyp5l"]
-[ext_resource type="Script" uid="uid://criauuxmr3u5l" path="res://arrow.gd" id="4_kimvq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ni566"]
 atlas = ExtResource("1_exn81")
@@ -296,10 +294,3 @@ zoom = Vector2(5.25, 5.25)
 limit_bottom = 1020
 limit_smoothed = true
 position_smoothing_enabled = true
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("3_vyp5l")
-expand_mode = 1
-script = ExtResource("4_kimvq")
