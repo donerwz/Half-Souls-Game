@@ -132,7 +132,6 @@ tile_set = SubResource("TileSet_v1wow")
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." index="3"]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
-motion_scale = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" index="0"]
 position = Vector2(-1020, -436)
@@ -1541,5 +1540,10 @@ texture = ExtResource("4_d2vyx")
 
 [node name="Sprite2D318" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" index="281"]
 position = Vector2(-1312, 276)
+scale = Vector2(0.5069444, 0.49444443)
+texture = ExtResource("4_d2vyx")
+
+[node name="Sprite2D289" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" index="282"]
+position = Vector2(-1311.9999, 809.99994)
 scale = Vector2(0.5069444, 0.49444443)
 texture = ExtResource("4_d2vyx")
