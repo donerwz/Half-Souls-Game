@@ -1,11 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://c6dtmugskad4o"]
+[gd_scene load_steps=10 format=4 uid="uid://duwdy33ghtlvu"]
 
 [ext_resource type="PackedScene" uid="uid://b46oumas53bdv" path="res://game_scene.tscn" id="1_lvnnb"]
 [ext_resource type="PackedScene" uid="uid://cuev551nm4two" path="res://knight_character_scene.tscn" id="2_0culw"]
 [ext_resource type="Texture2D" uid="uid://ckv7eh83e1kl7" path="res://sprites/dungeonbackgroundpixelart.jpg" id="4_d2vyx"]
 [ext_resource type="AudioStream" uid="uid://c8j3lmvw0nmuo" path="res://music/game-bgm-full.mp3" id="4_p1fvv"]
-[ext_resource type="PackedScene" uid="uid://dpy0hgjfhgvsv" path="res://soul_scene.tscn" id="5_nm52x"]
-[ext_resource type="PackedScene" uid="uid://ccic15lr7k5f0" path="res://killbrick_scene.tscn" id="6_p1fvv"]
+[ext_resource type="PackedScene" path="res://soul_scene.tscn" id="5_nm52x"]
+[ext_resource type="PackedScene" path="res://killbrick_scene.tscn" id="6_p1fvv"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0ofvv"]
 
