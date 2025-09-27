@@ -1,16 +1,19 @@
-[gd_scene load_steps=9 format=4 uid="uid://c6dtmugskad4o"]
+[gd_scene load_steps=10 format=4 uid="uid://c6dtmugskad4o"]
 
 [ext_resource type="PackedScene" uid="uid://b46oumas53bdv" path="res://game_scene.tscn" id="1_lvnnb"]
 [ext_resource type="PackedScene" uid="uid://cuev551nm4two" path="res://knight_character_scene.tscn" id="2_0culw"]
 [ext_resource type="Texture2D" uid="uid://ckv7eh83e1kl7" path="res://sprites/dungeonbackgroundpixelart.jpg" id="4_d2vyx"]
-[ext_resource type="AudioStream" uid="uid://bn2sii4m71rvu" path="res://music/game-bgm-full.mp3" id="4_p1fvv"]
+[ext_resource type="AudioStream" uid="uid://c8j3lmvw0nmuo" path="res://music/game-bgm-full.mp3" id="4_p1fvv"]
 [ext_resource type="PackedScene" uid="uid://dpy0hgjfhgvsv" path="res://soul_scene.tscn" id="5_nm52x"]
 [ext_resource type="PackedScene" uid="uid://ccic15lr7k5f0" path="res://killbrick_scene.tscn" id="6_p1fvv"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0ofvv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p1fvv"]
-size = Vector2(16, 10)
+size = Vector2(47, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ofvv"]
+size = Vector2(17, 10.25)
 
 [node name="Game" instance=ExtResource("1_lvnnb")]
 
@@ -1452,12 +1455,602 @@ position = Vector2(-20, 1102)
 shape = SubResource("WorldBoundaryShape2D_0ofvv")
 
 [node name="Killbrick2" parent="." index="7" instance=ExtResource("6_p1fvv")]
-position = Vector2(75, -136)
+position = Vector2(-20, 1102)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick2" index="0"]
-position = Vector2(13, 4)
+position = Vector2(107.5, -1234.5)
 shape = SubResource("RectangleShape2D_p1fvv")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Killbrick2" index="1"]
-position = Vector2(189, -28)
-shape = SubResource("RectangleShape2D_p1fvv")
+[node name="Killbrick3" parent="." index="8" instance=ExtResource("6_p1fvv")]
+position = Vector2(-20, 1102)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick3" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick4" parent="." index="9" instance=ExtResource("6_p1fvv")]
+position = Vector2(-4, 1086)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick4" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick5" parent="." index="10" instance=ExtResource("6_p1fvv")]
+position = Vector2(123, 1086)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick5" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick6" parent="." index="11" instance=ExtResource("6_p1fvv")]
+position = Vector2(140, 1086)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick6" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick7" parent="." index="12" instance=ExtResource("6_p1fvv")]
+position = Vector2(684, 966)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick7" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick8" parent="." index="13" instance=ExtResource("6_p1fvv")]
+position = Vector2(700, 966)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick8" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick9" parent="." index="14" instance=ExtResource("6_p1fvv")]
+position = Vector2(715, 966)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick9" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick10" parent="." index="15" instance=ExtResource("6_p1fvv")]
+position = Vector2(730, 966)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick10" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick11" parent="." index="16" instance=ExtResource("6_p1fvv")]
+position = Vector2(745, 966)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick11" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick12" parent="." index="17" instance=ExtResource("6_p1fvv")]
+position = Vector2(761, 966)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick12" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick13" parent="." index="18" instance=ExtResource("6_p1fvv")]
+position = Vector2(775, 966)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick13" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick14" parent="." index="19" instance=ExtResource("6_p1fvv")]
+position = Vector2(779, 966)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick14" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick15" parent="." index="20" instance=ExtResource("6_p1fvv")]
+position = Vector2(1164, 967)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick15" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick16" parent="." index="21" instance=ExtResource("6_p1fvv")]
+position = Vector2(1180, 967)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick16" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick17" parent="." index="22" instance=ExtResource("6_p1fvv")]
+position = Vector2(1644, 958)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick17" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick18" parent="." index="23" instance=ExtResource("6_p1fvv")]
+position = Vector2(1692, 958)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick18" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick19" parent="." index="24" instance=ExtResource("6_p1fvv")]
+position = Vector2(1107, 1309)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick19" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Killbrick19" index="3"]
+position = Vector2(1101, -1210)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Killbrick19" index="4"]
+position = Vector2(1101, -1202)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Killbrick19" index="5"]
+position = Vector2(1086, -1217)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Killbrick19" index="6"]
+position = Vector2(1086, -1224)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Killbrick19" index="7"]
+position = Vector2(1094, -1233)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Killbrick19" index="8"]
+position = Vector2(1111, -1233)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Killbrick19" index="9"]
+position = Vector2(1126, -1233)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Killbrick19" index="10"]
+position = Vector2(1142, -1233)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Killbrick19" index="11"]
+position = Vector2(1158, -1233)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Killbrick19" index="12"]
+position = Vector2(1173, -1233)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Killbrick19" index="13"]
+position = Vector2(1188, -1233)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Killbrick19" index="14"]
+position = Vector2(1189, -1217)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Killbrick19" index="15"]
+position = Vector2(-443, -857)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Killbrick19" index="16"]
+position = Vector2(-459, -857)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Killbrick19" index="17"]
+position = Vector2(-475, -857)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Killbrick19" index="18"]
+position = Vector2(-491, -857)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Killbrick19" index="19"]
+position = Vector2(-507, -857)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Killbrick19" index="20"]
+position = Vector2(-523, -857)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick20" parent="." index="25" instance=ExtResource("6_p1fvv")]
+position = Vector2(1107, 1301)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick20" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick21" parent="." index="26" instance=ExtResource("6_p1fvv")]
+position = Vector2(1107, 1294)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick21" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick22" parent="." index="27" instance=ExtResource("6_p1fvv")]
+position = Vector2(1107, 1286)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick22" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick23" parent="." index="28" instance=ExtResource("6_p1fvv")]
+position = Vector2(1122, 1277)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick23" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick24" parent="." index="29" instance=ExtResource("6_p1fvv")]
+position = Vector2(1122, 1270)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick24" index="2"]
+position = Vector2(284.5, -1265.75)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick26" parent="." index="30" instance=ExtResource("6_p1fvv")]
+position = Vector2(1122, 1270)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick26" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick27" parent="." index="31" instance=ExtResource("6_p1fvv")]
+position = Vector2(1139, 1270)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick27" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick28" parent="." index="32" instance=ExtResource("6_p1fvv")]
+position = Vector2(1155, 1270)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick28" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick29" parent="." index="33" instance=ExtResource("6_p1fvv")]
+position = Vector2(1169, 1270)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick29" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick30" parent="." index="34" instance=ExtResource("6_p1fvv")]
+position = Vector2(1521, 1366)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick30" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick31" parent="." index="35" instance=ExtResource("6_p1fvv")]
+position = Vector2(1536, 1366)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick31" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick32" parent="." index="36" instance=ExtResource("6_p1fvv")]
+position = Vector2(1549, 1366)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick32" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick33" parent="." index="37" instance=ExtResource("6_p1fvv")]
+position = Vector2(1553, 1366)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick33" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick34" parent="." index="38" instance=ExtResource("6_p1fvv")]
+position = Vector2(1570, 1351)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick34" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick35" parent="." index="39" instance=ExtResource("6_p1fvv")]
+position = Vector2(1570, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick35" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick36" parent="." index="40" instance=ExtResource("6_p1fvv")]
+position = Vector2(1587, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick36" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick37" parent="." index="41" instance=ExtResource("6_p1fvv")]
+position = Vector2(1603, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick37" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick38" parent="." index="42" instance=ExtResource("6_p1fvv")]
+position = Vector2(1620, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick38" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick39" parent="." index="43" instance=ExtResource("6_p1fvv")]
+position = Vector2(1637, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick39" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick40" parent="." index="44" instance=ExtResource("6_p1fvv")]
+position = Vector2(1653, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick40" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick41" parent="." index="45" instance=ExtResource("6_p1fvv")]
+position = Vector2(1669, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick41" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick42" parent="." index="46" instance=ExtResource("6_p1fvv")]
+position = Vector2(1683, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick42" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick43" parent="." index="47" instance=ExtResource("6_p1fvv")]
+position = Vector2(1699, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick43" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick44" parent="." index="48" instance=ExtResource("6_p1fvv")]
+position = Vector2(1713, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick44" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick45" parent="." index="49" instance=ExtResource("6_p1fvv")]
+position = Vector2(1727, 1349)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick45" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick46" parent="." index="50" instance=ExtResource("6_p1fvv")]
+position = Vector2(1735, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick46" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick47" parent="." index="51" instance=ExtResource("6_p1fvv")]
+position = Vector2(1745, 1350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick47" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick48" parent="." index="52" instance=ExtResource("6_p1fvv")]
+position = Vector2(1762, 1334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick48" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick49" parent="." index="53" instance=ExtResource("6_p1fvv")]
+position = Vector2(1779, 1334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick49" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick50" parent="." index="54" instance=ExtResource("6_p1fvv")]
+position = Vector2(1795, 1334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick50" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick51" parent="." index="55" instance=ExtResource("6_p1fvv")]
+position = Vector2(1809, 1334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick51" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick52" parent="." index="56" instance=ExtResource("6_p1fvv")]
+position = Vector2(1824, 1334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick52" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick53" parent="." index="57" instance=ExtResource("6_p1fvv")]
+position = Vector2(1840, 1334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick53" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick54" parent="." index="58" instance=ExtResource("6_p1fvv")]
+position = Vector2(1854, 1334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick54" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick55" parent="." index="59" instance=ExtResource("6_p1fvv")]
+position = Vector2(1868, 1334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick55" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick56" parent="." index="60" instance=ExtResource("6_p1fvv")]
+position = Vector2(1883, 1334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick56" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick57" parent="." index="61" instance=ExtResource("6_p1fvv")]
+position = Vector2(1889, 1334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick57" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick58" parent="." index="62" instance=ExtResource("6_p1fvv")]
+position = Vector2(1905, 1318)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick58" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick59" parent="." index="63" instance=ExtResource("6_p1fvv")]
+position = Vector2(1922, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick59" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick60" parent="." index="64" instance=ExtResource("6_p1fvv")]
+position = Vector2(1939, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick60" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick61" parent="." index="65" instance=ExtResource("6_p1fvv")]
+position = Vector2(1955, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick61" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick62" parent="." index="66" instance=ExtResource("6_p1fvv")]
+position = Vector2(1972, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick62" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick63" parent="." index="67" instance=ExtResource("6_p1fvv")]
+position = Vector2(1987, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick63" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick64" parent="." index="68" instance=ExtResource("6_p1fvv")]
+position = Vector2(2002, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick64" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick65" parent="." index="69" instance=ExtResource("6_p1fvv")]
+position = Vector2(2019, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick65" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick66" parent="." index="70" instance=ExtResource("6_p1fvv")]
+position = Vector2(2034, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick66" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick67" parent="." index="71" instance=ExtResource("6_p1fvv")]
+position = Vector2(2050, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick67" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick68" parent="." index="72" instance=ExtResource("6_p1fvv")]
+position = Vector2(2066, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick68" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick69" parent="." index="73" instance=ExtResource("6_p1fvv")]
+position = Vector2(2082, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick69" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick70" parent="." index="74" instance=ExtResource("6_p1fvv")]
+position = Vector2(2097, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick70" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick71" parent="." index="75" instance=ExtResource("6_p1fvv")]
+position = Vector2(2114, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick71" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick72" parent="." index="76" instance=ExtResource("6_p1fvv")]
+position = Vector2(2129, 1303)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick72" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick73" parent="." index="77" instance=ExtResource("6_p1fvv")]
+position = Vector2(2049, 1189)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick73" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick74" parent="." index="78" instance=ExtResource("6_p1fvv")]
+position = Vector2(2034, 1190)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick74" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick75" parent="." index="79" instance=ExtResource("6_p1fvv")]
+position = Vector2(1809, 1222)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick75" index="2"]
+position = Vector2(-889, -570.875)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick76" parent="." index="80" instance=ExtResource("6_p1fvv")]
+position = Vector2(1778, 1222)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick76" index="2"]
+position = Vector2(-889, -570)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="Killbrick25" parent="." index="81" instance=ExtResource("6_p1fvv")]
+position = Vector2(1138, 1261)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbrick25" index="2"]
+position = Vector2(285, -1265)
+shape = SubResource("RectangleShape2D_0ofvv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Killbrick25" index="3"]
+position = Vector2(285, -1273)
+shape = SubResource("RectangleShape2D_0ofvv")
