@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dpy0hgjfhgvsv"]
+[gd_scene load_steps=7 format=3 uid="uid://upe0f78ocus5"]
 
 [ext_resource type="Texture2D" uid="uid://s55jpevgos5h" path="res://sprites/pixil-frame-0 (1).png" id="1_5c0ox"]
 [ext_resource type="Script" uid="uid://cv6q3wbdf5gny" path="res://soul_script.gd" id="1_cex2b"]
@@ -15,7 +15,7 @@ animations = [{
 "texture": ExtResource("2_42rgm")
 }],
 "loop": true,
-"name": &"default",
+"name": &"soul_idle",
 "speed": 5.0
 }]
 
@@ -30,8 +30,8 @@ script = ExtResource("1_cex2b")
 position = Vector2(2.3841858e-07, -2.3841858e-07)
 scale = Vector2(1.375, 1.375)
 sprite_frames = SubResource("SpriteFrames_cex2b")
-frame = 1
-frame_progress = 0.15781207
+animation = &"soul_idle"
+autoplay = "soul_idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)

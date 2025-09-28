@@ -10,6 +10,10 @@ func _on_body_entered(body: Node2D):
 	if body.has_node("AnimatedSprite2D"):
 		var animsprite = body.get_node("AnimatedSprite2D")
 		animsprite.play("death")
+		
+	
+	var death_text = body.get_node("DeathText")
+	death_text.show()
 
 	death_sound.play()
 	timer.start()

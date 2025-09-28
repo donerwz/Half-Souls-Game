@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://cwd6pul2bpkcj"]
+[gd_scene load_steps=7 format=3 uid="uid://b0xdsxvb57nmh"]
 
-[ext_resource type="Script" uid="uid://dpeennp7p0cmq" path="res://soul_jump_script.gd" id="1_2gx0p"]
+[ext_resource type="Script" path="res://soul_jump_script.gd" id="1_2gx0p"]
 [ext_resource type="Texture2D" uid="uid://s55jpevgos5h" path="res://sprites/pixil-frame-0 (1).png" id="2_t6l2f"]
 [ext_resource type="Texture2D" uid="uid://ealgt5giqk0d" path="res://sprites/pixil-frame-0.png" id="3_dvysr"]
 [ext_resource type="AudioStream" uid="uid://6a6so51gr5y" path="res://sounds/431980__horroraudio__ghost-sigh2.wav" id="4_2wf65"]
@@ -15,7 +15,7 @@ animations = [{
 "texture": ExtResource("3_dvysr")
 }],
 "loop": true,
-"name": &"default",
+"name": &"soul_idle",
 "speed": 5.0
 }]
 
@@ -30,8 +30,8 @@ script = ExtResource("1_2gx0p")
 position = Vector2(2.3841858e-07, -2.3841858e-07)
 scale = Vector2(1.375, 1.375)
 sprite_frames = SubResource("SpriteFrames_cex2b")
-frame = 1
-frame_progress = 0.15781207
+animation = &"soul_idle"
+autoplay = "soul_idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)

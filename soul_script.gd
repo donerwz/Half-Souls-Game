@@ -8,6 +8,10 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	print("soul pick up")
 	
+	var soul_text = body.get_node("SoulText")
+	
+	soul_text.show()
+	
 	hide()
 	set_deferred("collision_layer", 0)
 	set_deferred("collision_mask", 0)
@@ -23,6 +27,6 @@ func _on_body_entered(body: Node2D) -> void:
 	# Wait for the sound to finish playing using await
 	await $SoulSound.finished
 	
-	
+	soul_text.hide()
 	
 	queue_free()

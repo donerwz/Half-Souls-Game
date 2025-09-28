@@ -1,7 +1,11 @@
-[gd_scene load_steps=40 format=3 uid="uid://cuev551nm4two"]
+[gd_scene load_steps=45 format=3 uid="uid://cuev551nm4two"]
 
 [ext_resource type="Script" uid="uid://ces1c6bbmnmng" path="res://knight_character_movement_script.gd" id="1_58q3j"]
 [ext_resource type="Texture2D" uid="uid://fef58xsbxsc8" path="res://sprites/knight.png" id="1_exn81"]
+[ext_resource type="Texture2D" uid="uid://bei4j4jnnhtut" path="res://assets/arrow.png" id="3_vyp5l"]
+[ext_resource type="Texture2D" uid="uid://c7jo7au1suqk7" path="res://assets/victoryscreen.png" id="4_vyp5l"]
+[ext_resource type="Texture2D" uid="uid://h7n0j2ajnrh3" path="res://sprites/diedscreen1.png" id="5_kimvq"]
+[ext_resource type="Texture2D" uid="uid://b3yt7858oe0j3" path="res://sprites/sacraficedsoultext.png" id="6_egqlg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ni566"]
 atlas = ExtResource("1_exn81")
@@ -274,6 +278,30 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_yf37e"]
 radius = 5.0
 
+[sub_resource type="GDScript" id="GDScript_lo4jt"]
+script/source = "extends TextureRect
+@export var player: AnimatedSprite2D
+@export var target: Node2D
+
+func _process(delta):
+	if not player or not target:
+		return
+
+	# Direction from player to target
+	var direction = (target.global_position - player.global_position).normalized()
+
+	# Rotate arrow to point at target
+	rotation = atan2(direction.y, direction.x)
+
+	# --- Check if target is on screen ---
+	var camera := get_viewport().get_camera_2d()
+	if camera:
+		var screen_pos = camera.unproject_position(target.global_position)
+
+		# Hide arrow if target is inside the screen
+		visible = not get_viewport_rect().has_point(screen_pos)
+"
+
 [node name="KnightCharacter" type="CharacterBody2D"]
 z_index = 5
 collision_layer = 16
@@ -291,6 +319,36 @@ shape = SubResource("CircleShape2D_yf37e")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(5.25, 5.25)
+process_callback = 0
 limit_bottom = 1020
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_left = 5.0
+offset_top = 12.0
+offset_right = 18.538462
+offset_bottom = 23.0
+texture = ExtResource("3_vyp5l")
+expand_mode = 1
+script = SubResource("GDScript_lo4jt")
+
+[node name="VictoryText" type="Sprite2D" parent="."]
+visible = false
+z_index = -21
+scale = Vector2(0.12000245, 0.12000245)
+texture = ExtResource("4_vyp5l")
+
+[node name="DeathText" type="Sprite2D" parent="."]
+visible = false
+z_index = -21
+scale = Vector2(0.23198038, 0.23198038)
+texture = ExtResource("5_kimvq")
+
+[node name="SoulText" type="Sprite2D" parent="."]
+visible = false
+z_index = 17
+position = Vector2(0, 28.999998)
+scale = Vector2(0.14171441, 0.14171441)
+texture = ExtResource("6_egqlg")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://ccic15lr7k5f0"]
+[gd_scene load_steps=3 format=3 uid="uid://dlxlf4fp0p42p"]
 
 [ext_resource type="Script" uid="uid://ccegenuj4y2x1" path="res://killbrick_script.gd" id="1_sh0t1"]
 [ext_resource type="AudioStream" uid="uid://c2jxpu551orcj" path="res://sounds/547184__mrfossy__voice_adultmale_deathscream_01.wav" id="2_ouy42"]
